@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+    font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+    margin-top: 5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+img {
+    animation: levitate 1.5s alternate ease-in-out infinite;
+}
+
+h1 {
+    font-weight: 300;
+    color: #222;
+    font-size: 4em;
+}
+
+form input[type=email] {
+    display: inline-block;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    padding: 1% 1.5% 1% 1.5%;
+    font-size: 1em;
+    min-width: 30%;
+}
+
+form input[type=submit] {
+    display: inline-block;
+    background: #2963A5;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 1% 1.5% 1% 1.5%;
+    font-size: 1em;
+    transition: background 0.3s ease-out;
+}
+
+form input[type=submit]:hover {
+    background: #3A83CC;
+}
+
+@keyframes levitate {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, 25px); }
+}
